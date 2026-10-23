@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 0.5.10 — 2026-10-23
+
+**Highlights:** Chromium local-storage reads keep HTTP and HTTPS origins distinct, and cookie domain filters now match consistently in SQL and in memory.
+
 - Compare schemes when a Chromium local-storage key and the requested origin both have one, so http and https on the same host stay distinct. Matching schemes still compare hosts, so an uppercase scheme matches that origin. A schemeless key still matches that host. (#43, thanks @SebTardif)
 - Normalize cookie domain contains and suffix filters before the SQLite LIKE, and escape percent and underscore, so the query matches the in-memory matcher. (#44, thanks @SebTardif)
 
