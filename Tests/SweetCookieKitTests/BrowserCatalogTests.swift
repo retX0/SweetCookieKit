@@ -54,6 +54,7 @@ struct BrowserCatalogTests {
         #expect(order.count == Browser.allCases.count - 1)
         #expect(Set(order) == Set(Browser.allCases.filter { $0 != .claudeDesktop }))
         #expect(Set(order).count == order.count)
+        #expect(order.last == .braveOrigin)
     }
 
     @Test

@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Add Brave Origin as a Chromium cookie source, reading `BraveSoftware/Brave-Origin` with Brave's Safe Storage Keychain item.
+- Add Brave Origin as a Chromium cookie source, reading `BraveSoftware/Brave-Origin` with Brave's Safe Storage Keychain item (#47). Thanks @retX0!
 
 ## 0.5.10 — 2026-10-23
 
